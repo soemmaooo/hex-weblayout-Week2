@@ -1,0 +1,54 @@
+.productImgList{
+    width: 746px;
+    .productImg{
+        width: 49%;
+    }
+}
+.productInfo{
+    width: 525px;
+    a{
+    width: 64px;
+    border: 1px solid #fff;
+    &:hover{
+        border: 1px solid $neutral-900;
+        border-radius: 4px;
+    }
+}
+    .productSize{
+        .btn{
+            width: 160px;
+            background-color: #fff;
+            padding: $spacing-s $spacing-l;
+            border: 1px solid $neutral-300;
+            border-radius: 4px;
+            &:hover{
+                border: 1px solid $neutral-900;
+            }
+        }
+        .active{
+            border: 1px solid $neutral-900;
+        }
+    }
+}
+.btn-light{
+    border: 1px solid $neutral-900;
+    width: 49%;
+    padding: $spacing-s $spacing-l;
+    background: #fff;
+    border-radius: 4px;
+}
+.btn-dark{
+    border: 1px solid $neutral-900;
+    width: 49%;
+    padding: $spacing-s $spacing-l;
+    color: #fff;
+    background: $neutral-900;
+    border-radius: 4px;
+}
+
+.productLike{
+    .productLikeCard{
+        width: 23.6%; 
+    }
+}
+
