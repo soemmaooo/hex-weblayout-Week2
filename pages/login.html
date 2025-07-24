@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登入 | 六角鞋子電商</title>
+</head>
+
+<body>
+    <%- include('./layout/header'); -%>
+        <!-- 手機版banner -->
+        <img class="d-none d-md-block" src="/assets/images/login-sm.png" alt="登入">
+        
+        <div class="container">
+            <div class="row py-5xl py-md-xl fd-md-column">
+                <!-- 電腦版左banner -->
+                <div class="col-5 d-md-none">
+                    <div class="login-img"></div>
+                </div>
+                
+                <div class="col-7 login-form d-md-contents">
+                    <p class="h3 h4-md tac">歡迎！</p>
+                    <!-- 登入或註冊 -->
+                    <ul class="d-flex login-tabs mb-xl">
+                        <li class="active"><a href="#">登入</a></li>
+                        <li><a class="text-neutral600" href="#">註冊</a></li>
+                    </ul>
+                    <!-- 登入選項 -->
+                    <ul class="login-types">
+                        <li class="mb-xs"><a class="d-flex aic" href="#">
+                                <img class="mr-s" src="/assets/images/facebook.svg" alt="facebook">
+                                <p>Facebook 登入</p>
+                            </a></li>
+                        <li class="mb-xs"><a class="d-flex aic" href="#">
+                                <img class="mr-s" src="/assets/images/apple.svg" alt="apple">
+                                <p>Apple 登入</p>
+                            </a></li>
+                        <li class="mb-xs"><a class="d-flex aic" href="#">
+                                <img class="mr-s" src="/assets/images/google.svg" alt="google">
+                                <p>Google 登入</p>
+                            </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <%- include('./layout/footer'); -%>
+            <script type="module" src="../main.js"></script>
+</body>
+
+</html>

@@ -1,142 +1,202 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-TW">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- CSS -->
-    <link rel="stylesheet" href="/assets/scss/all.scss">
-    <title>產品列表頁 | 六角鞋子電商</title>
+    <title>首頁 | 六角鞋子電商</title>
 </head>
+
 <body>
-    <header>
-        <div class="container d-flex py-m">
-            <img class="pr-2xl" src="/assets/images/Logo.png" alt="Logo">
-            <nav class="mr-auto">
-                <ul class="nav d-flex">
-                    <li><a class="py-s mr-2xl" href="index.html">商品列表</a></li>
-                    <li><a class="py-s" href="#">品牌故事</a></li>
-                </ul>
-            </nav>
-            <a class="py-s" href="#"><i class="bi bi-person"></i></a>
-        </div>
-    </header>
-    <div class="container">
-        <div class="breadcrumb">
-            <p><span class="text-neutral600">首頁</span><span class="text-neutral300 px-s">/</span>所有商品</p>
-        </div>
-        <h3 class="my-xl">所有商品</h3>
-        <!-- 產品類別 -->
-        <div class="d-flex">
-            <ul class="menu mr-l">
-                <li><a class="py-s mb-m text-primary400" href="#">所有商品</a></li>
-                <li><a class="py-s mb-m" href="#">慢跑鞋</a></li>
-                <li><a class="py-s mb-m" href="#">滑板鞋</a></li>
-                <li><a class="py-s mb-m" href="#">厚底鞋</a></li>
-                <li><a class="py-s mb-m" href="#">限定/聯名企劃</a></li>
+    <%- include('./layout/header'); -%>
+        <!-- 小導覽列 -->
+        <nav class="nav-small d-none d-md-block">
+            <ul class="d-flex">
+                <li class="bg-primary100"><a class="py-s px-l" href="product.html">商品列表</a></li>
+                <li class="bg-primary200 "><a class="py-s px-l" href="story.html">品牌故事</a></li>
             </ul>
-            <!-- 產品清單 -->
-            <div>
-                <ul class="productList d-flex f-wrap mb-3xl">
-                    <li class="productCard">
-                        <a href="product_info.html">
-                            <img class="mb-s" src="/assets/images/product.png" alt="鞋子">
-                            <h6 class="mb-xxs">PLATFORM 404</h6>
+        </nav>
+
+        <!-- banner -->
+        <section class="banner text-white">
+            <p class="text-display1 mb-m text-md-display2">URBNSTEP</p>
+            <p class="h3 mb-3xl h5-md">Your Step, Your Statement</p>
+            <button type="button" class="primary-btn">立即選購</button>
+        </section>
+        <!-- 新品上市 -->
+        <section class="container py-5xl py-md-2xl">
+            <p class="text-display2 h2-md tac mb-s mb-md-xs">New Arrival</p>
+            <p class="h2 h4-md tac mb-xl mb-md-l">新品上市</p>
+            <div class="d-flex f-wrap">
+                <ul class="row">
+                    <li class="new-item col-6 col-md-2 mb-2xl mb-md-l">
+                        <a href="#">
+                            <img src="/assets/images/new-1.png" alt="新品1">
+                            <p class="h5 h6-md">Monoverse</p>
+                            <p>NT$3,600</p>
+                        </a>
+                    </li>
+                    <li class="new-item col-6 col-md-2 mb-2xl mb-md-l">
+                        <a href="#">
+                            <img src="/assets/images/new-2.png" alt="新品1">
+                            <p class="h5 h6-md">PLATFORM 404</p>
                             <p>NT$2,600</p>
                         </a>
                     </li>
-                    <li class="productCard">
+                    <li class="new-item col-6 col-md-2">
                         <a href="#">
-                            <img class="mb-s" src="/assets/images/product-1.png" alt="鞋子">
-                            <h6 class="mb-xxs">PLATFORM 404</h6>
-                            <p>NT$2,600</p>
-                        </a>
-                    </li>
-                    <li class="productCard">
-                        <a href="#">
-                            <img class="mb-s" src="/assets/images/product-2.png" alt="鞋子">
-                            <h6 class="mb-xxs">VM001</h6>
-                            <p>NT$2,600</p>
-                        </a>
-                    </li>
-                    <li class="productCard">
-                        <a href="#">
-                            <img class="mb-s" src="/assets/images/product-3.png" alt="鞋子">
-                            <h6 class="mb-xxs">Melty Kiss</h6>
-                            <p>NT$4,000</p>
-                        </a>
-                    </li>
-                    <li class="productCard">
-                        <a href="#">
-                            <img class="mb-s" src="/assets/images/product-4.png" alt="鞋子">
-                            <h6 class="mb-xxs">BOOMBLOK</h6>
+                            <img src="/assets/images/new-3.png" alt="新品1">
+                            <p class="h5 h6-md">URBN Force</p>
                             <p>NT$3,200</p>
                         </a>
                     </li>
-                    <li class="productCard">
+                    <li class="new-item col-6 col-md-2">
                         <a href="#">
-                            <img class="mb-s" src="/assets/images/product-5.png" alt="鞋子">
-                            <h6 class="mb-xxs">BOOMBLOK</h6>
-                            <p>NT$3,200</p>
-                        </a>
-                    </li>
-                    <li class="productCard">
-                        <a href="#">
-                            <img class="mb-s" src="/assets/images/product-6.png" alt="鞋子">
-                            <h6 class="mb-xxs">R:UNER</h6>
-                            <p>NT$4,000</p>
-                        </a>
-                    </li>
-                    <li class="productCard">
-                        <a href="#">
-                            <img class="mb-s" src="/assets/images/product-7.png" alt="鞋子">
-                            <h6 class="mb-xxs">Sugar Snap</h6>
-                            <p>NT$4,000</p>
-                        </a>
-                    </li>
-                    <li class="productCard">
-                        <a href="#">
-                            <img class="mb-s" src="/assets/images/product-8.png" alt="鞋子">
-                            <h6 class="mb-xxs">Neofoam</h6>
+                            <img src="/assets/images/new-4.png" alt="新品1">
+                            <p class="h5 h6-md">Mode90</p>
                             <p>NT$4,000</p>
                         </a>
                     </li>
                 </ul>
-                <!-- 產品頁碼選單 -->
-                <ul class="pagination d-flex jcc aic mb-xl">
-                    <li><a class="p-xs" href="#"><i class="bi bi-chevron-left"></i></a></li>
-                    <li><a class="p-xs bg-primary300" href="#">1</a></li>
-                    <li><a class="p-xs" href="#">2</a></li>
-                    <li><a class="p-xs" href="#">3</a></li>
-                    <li><a class="p-xs" href="#">...</a></li>
-                    <li><a class="p-xs" href="#">10</a></li>
-                    <li><a class="p-xs" href="#"><i class="bi bi-chevron-right"></i></a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-   
-    <section class="callToAction d-flex mt-3xl py-l jcc aic">
-        <h4 class="mr-l">加入會員取得 9 折優惠</h4>
-        <button type="button" class="btn">馬上註冊</button>
-    </section>
 
-    <footer>
-        <div class="container py-5xl">
-            <div class="d-flex">
-                <img class="pr-2xl" src="/assets/images/Logo.png" alt="Logo">
-                <nav class="ml-auto">
-                    <ul class="nav d-flex">
-                        <li><a class="py-s mr-2xl" href="index.html">商品列表</a></li>
-                        <li><a class="py-s" href="#">品牌故事</a></li>
-                    </ul>
-                </nav>
             </div>
-            <div class="tac text-sm text-neutral600 border-t pt-xl">
-                <p>Copyright ©2025 URBNSTYLE</p>
-                <p>All Rights Reserved.</p>
+        </section>
+        <!-- 熱銷補貨 -->
+        <section class="container py-5xl py-md-2xl">
+            <p class="h2 h4-md mb-m">熱銷補貨</p>
+            <ul class="row hotsale-md-row">
+                <li class="col-3 p-relativev sale-card">
+                    <a href="#">
+                        <img src="/assets/images/product-3.png" alt="鞋子">
+                    </a>
+                    <p class="best-tag">人氣 No.1</p>
+                </li>
+                <li class="col-3 p-relativev sale-card">
+                    <a href="#">
+                        <img src="/assets/images/product.png" alt="鞋子">
+                    </a>
+                    <p class="best-tag">人氣 No.1</p>
+                </li>
+                <li class="col-3 p-relativev sale-card">
+                    <a href="#">
+                        <img src="/assets/images/product-6.png" alt="鞋子">
+                    </a>
+                    <p class="best-tag">人氣 No.1</p>
+                </li>
+                <li class="col-3 p-relativev sale-card">
+                    <a href="#">
+                        <img src="/assets/images/product-4.png" alt="鞋子">
+                    </a>
+                    <p class="best-tag">人氣 No.1</p>
+                </li>
+            </ul>
+        </section>
+        <!-- 限量Banner -->
+        <section class="sale-banner d-flex fd-column jcc aic my-5xl my-md-2xl">
+            <div class="d-flex mb-m aic fd-md-column">
+                <p class="text-display2 h2-md text-white">URBNSTEP</p>
+                <p class="h2 h3-md text-primary300 mx-l">x</p>
+                <p class="text-display2 h2-md text-white">Kevin Chen</p>
             </div>
-        </div>
-    </footer>
+            <p class="h2 h5-md text-white tac mb-xl">跨界聯名，限量發售</p>
+            <p class="text-neutral500 text-lg tac mb-3xl d-md-flex fd-md-column">
+                <span>新銳漫畫家 Kevin Chen 親自操刀設計</span><span class="d-md-none">，</span><span>街頭能量全面引爆！</span>
+            </p>
+            <button type="button" class="primary-btn">立即搶購</button>
+            <img class="img-star" src="/assets/images/star.svg" alt="star">
+            <img class="img-sparkle" src="/assets/images/sparkle.svg" alt="sparkle">
+        </section>
+        <!-- 系列選購 -->
+        <section class="container py-5xl py-md-2xl">
+            <p class="h2 h4-md mb-m">依系列選購</p>
+            <ul class="row">
+                <li class="col-3 col-md-2 mb-md-s">
+                    <a href="#">
+                        <div class="p-relativev">
+                            <img src="/assets/images/product-6.png" alt="系列1">
+                            <div class="category-info">
+                                <p class="h3 h6-md mb-xs category-title">URBN RUNNER</p>
+                                <p class="h4 h6-md">慢跑系列</p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="col-3 col-md-2 mb-md-s">
+                    <a href="#">
+                        <div class="p-relativev">
+                            <img src="/assets/images/product-11.png" alt="系列2">
+                            <div class="category-info">
+                                <p class="h3 h6-md mb-xs category-title">STREETMODE</p>
+                                <p class="h4 h6-md">滑板系列</p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="col-3 col-md-2">
+                    <a href="#">
+                        <div class="p-relativev">
 
+                            <img src="/assets/images/product-4.png" alt="系列3">
+                            <div class="category-info">
+                                <p class="h3 h6-md mb-xs category-title">CHUNK DISTRICT</p>
+                                <p class="h4 h6-md">厚底系列</p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="col-3 col-md-2">
+                    <a href="#">
+                        <div class="p-relativev">
+
+                            <img src="/assets/images/product-1.png" alt="系列4">
+                            <div class="category-info">
+                                <p class="h3 h6-md mb-xs category-title">COLLAB ZONE</p>
+                                <p class="h4 h6-md">聯名企劃</p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <!-- 穿搭靈感 -->
+        <section class="container py-5xl py-md-2xl">
+            <p class="h2 h4-md mb-m">穿搭靈感</p>
+            <div class="style d-flex column-gap-xs overflow-md-auto column-md-gap-16">
+                <div class="a w-66 d-flex fd-column row-gap-xs d-md-contents">
+                    <div class="c d-flex flex-grow-1 column-gap-xs d-md-contents">
+                        <img src="/assets/images/inspiration-1.png" alt="穿搭照">
+                        <img src="/assets/images/inspiration-2.png" alt="穿搭照">
+                        <img src="/assets/images/inspiration-4.png" alt="穿搭照">
+                        <img src="/assets/images/inspiration-5.png" alt="穿搭照">
+                    </div>
+                    <div class="d d-flex column-gap-xs d-md-contents">
+                        <img src="/assets/images/inspiration-3.png" alt="穿搭照">
+                        <div class="d-flex fd-column row-gap-xs d-md-contents">
+                            <div class="f d-flex column-gap-xs">
+                                <img src="/assets/images/inspiration-6.png" alt="穿搭照">
+                                <img src="/assets/images/inspiration-7.png" alt="穿搭照">
+                            </div>
+                            <div class="g d-flex column-gap-xs d-md-contents">
+                                <img src="/assets/images/inspiration-8.png" alt="穿搭照">
+                                <img src="/assets/images/inspiration-9.png" alt="穿搭照">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="b w-33 d-flex fd-column row-gap-xs d-md-contents">
+                    <img src="/assets/images/inspiration-10.png" alt="穿搭照">
+                    <div class="e d-flex column-gap-xs d-md-contents">
+                        <img src="/assets/images/inspiration-11.png" alt="穿搭照">
+                        <img src="/assets/images/inspiration-12.png" alt="穿搭照">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <%- include('./layout/callToAction'); -%>
+
+        <%- include('./layout/footer'); -%>
+        <script type="module" src="../main.js"></script>
 </body>
+
 </html>

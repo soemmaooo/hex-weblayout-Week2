@@ -1,54 +1,124 @@
-.productImgList{
-    width: 746px;
-    .productImg{
-        width: 49%;
-    }
+.product-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -4px;
+    margin-right: -4px;
 }
-.productInfo{
-    width: 525px;
-    a{
-    width: 64px;
-    border: 1px solid #fff;
-    &:hover{
-        border: 1px solid $neutral-900;
-        border-radius: 4px;
-    }
+
+.product-col {
+    width: calc(100% / 12 * 6);
+    padding-left: 4px;
+    padding-right: 4px;
 }
-    .productSize{
-        .btn{
-            width: 160px;
-            background-color: #fff;
-            padding: $spacing-s $spacing-l;
-            border: 1px solid $neutral-300;
+
+
+.productColor {
+    a {
+        width: 64px;
+        border: 1px solid #fff;
+
+        &:hover {
+            border: 1px solid $neutral-900;
             border-radius: 4px;
-            &:hover{
-                border: 1px solid $neutral-900;
-            }
         }
-        .active{
+    }
+
+}
+
+.productSize {
+    .btn {
+        width: 160px;
+        background-color: #fff;
+        padding: $spacing-s $spacing-l;
+        border: 1px solid $neutral-300;
+        border-radius: 4px;
+
+        &:hover {
             border: 1px solid $neutral-900;
         }
     }
+
+    .active {
+        border: 1px solid $neutral-900;
+    }
 }
-.btn-light{
+
+.btn-light {
     border: 1px solid $neutral-900;
-    width: 49%;
+    width: 50%;
     padding: $spacing-s $spacing-l;
     background: #fff;
     border-radius: 4px;
+
+    &:hover {
+        background: #000;
+        color: #FFF;
+    }
 }
-.btn-dark{
+
+.btn-dark {
     border: 1px solid $neutral-900;
-    width: 49%;
+    width: 50%;
     padding: $spacing-s $spacing-l;
     color: #fff;
     background: $neutral-900;
     border-radius: 4px;
-}
 
-.productLike{
-    .productLikeCard{
-        width: 23.6%; 
+    &:hover {
+        background: #FFF;
+        color: #000;
     }
 }
 
+
+
+.productLikeCard:hover {
+    img {
+        opacity: 0.8;
+    }
+}
+
+
+:disabled {
+    pointer-events: none;
+}
+
+
+.heart-btn {
+  background: none;
+  border: none;
+  font-size: 24px;
+  padding: 12px;
+}
+
+.icon-filled {
+  display: none;
+  color: #333;
+}
+
+.heart-btn:hover .icon-outline {
+  display: none;
+}
+
+.heart-btn:hover .icon-filled {
+  display: inline;
+}
+
+
+@media (max-width: 767px) {
+    .btn-dark {
+        width: 100%;
+        padding: $spacing-s $spacing-l;
+    }
+    .productLike-md-row{
+    flex-wrap: nowrap;
+    overflow: hidden; 
+    overflow-x: auto;  
+    -webkit-overflow-scrolling: touch;
+    .productLikeCard {
+        width: 300px;
+        flex-shrink: 0; 
+        
+    }
+}
+}

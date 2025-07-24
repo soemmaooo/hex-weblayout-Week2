@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>商品列表 | 六角鞋子電商</title>
+</head>
+
+<body>
+    <%- include('./layout/header'); -%>
+
+        <!-- 麵包屑 -->
+        <nav class="container">
+            <ol class="d-flex f-wrap">
+                <li class="breadcrumb-item">
+                    <a class="text-neutral600 text-md-sm" href="index.html">首頁</a>
+                </li>
+                <li class="breadcrumb-item">
+                    <a class="text-neutral600 text-md-sm" href="index.html">女鞋</a>
+                </li>
+                <li class="breadcrumb-item text-md-sm">所有商品</li>
+            </ol>
+        </nav>
+        <main class="container">
+            <h1 class="h3 h4-md py-xs my-l my-md-s">女鞋</h1>
+            <div class="row">
+                <!-- 產品類別選單 -->
+                <div class="col-2 d-md-none">
+                    <nav>
+                        <ul class="menu mr-l">
+                            <li><a class="py-s mb-m text-primary400" href="#">所有商品</a></li>
+                            <li><a class="py-s mb-m" href="#">慢跑鞋</a></li>
+                            <li><a class="py-s mb-m" href="#">滑板鞋</a></li>
+                            <li><a class="py-s mb-m" href="#">厚底鞋</a></li>
+                            <li><a class="py-s mb-m" href="#">限定/聯名企劃</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <!-- 產品清單 -->
+                <div class="col-10 col-md-4">    
+                    <div>
+                        <ul class="row d-flex f-wrap mb-3xl mb-md-xl">
+                            <li class="col-4 col-md-2">
+                                <a href="product_info.html">
+                                    <img class="mb-s mb-md-xs" src="/assets/images/product.png" alt="鞋子">
+                                    <p class="h6 mb-xxs">PLATFORM 404</p>
+                                    <p>NT$2,600</p>
+                                </a>
+                            </li>
+                            <li class="col-4 col-md-2 mb-3xl mb-md-l">
+                                <a href="product_info.html">
+                                    <img class="mb-s mb-md-xs" src="/assets/images/product-1.png" alt="鞋子">
+                                    <p class="h6 mb-xxs">PLATFORM 404</p>
+                                    <p>NT$2,600</p>
+                                </a>
+                            </li>
+                            <li class="col-4 col-md-2 mb-3xl mb-md-l">
+                                <a href="product_info.html">
+                                    <img class="mb-s mb-md-xs" src="/assets/images/product-2.png" alt="鞋子">
+                                    <p class="h6 mb-xxs">VM001</p>
+                                    <p>NT$2,600</p>
+                                </a>
+                            </li>
+                            <li class="col-4 col-md-2 mb-3xl mb-md-l">
+                                <a href="product_info.html">
+                                    <img class="mb-s mb-md-xs" src="/assets/images/product-3.png" alt="鞋子">
+                                    <p class="h6 mb-xxs">Melty Kiss</p>
+                                    <p>NT$4,000</p>
+                                </a>
+                            </li>
+                            <li class="col-4 col-md-2 mb-3xl mb-md-l">
+                                <a href="product_info.html">
+                                    <img class="mb-s mb-md-xs" src="/assets/images/product-4.png" alt="鞋子">
+                                    <p class="h6 mb-xxs">BOOMBLOK</p>
+                                    <p>NT$3,200</p>
+                                </a>
+                            </li>
+                            <li class="col-4 col-md-2 mb-3xl mb-md-l">
+                                <a href="product_info.html">
+                                    <img class="mb-s mb-md-xs" src="/assets/images/product-5.png" alt="鞋子">
+                                    <p class="h6 mb-xxs">BOOMBLOK</p>
+                                    <p>NT$3,200</p>
+                                </a>
+                            </li>
+                            <li class="col-4 col-md-2 mb-3xl mb-md-l">
+                                <a href="product_info.html">
+                                    <img class="mb-s mb-md-xs" src="/assets/images/product-6.png" alt="鞋子">
+                                    <p class="h6 mb-xxs">R:UNER</p>
+                                    <p>NT$4,000</p>
+                                </a>
+                            </li>
+                            <li class="col-4 col-md-2 mb-3xl mb-md-l">
+                                <a href="product_info.html">
+                                    <img class="mb-s mb-md-xs" src="/assets/images/product-7.png" alt="鞋子">
+                                    <p class="h6 mb-xxs">Sugar Snap</p>
+                                    <p>NT$4,000</p>
+                                </a>
+                            </li>
+                            <li class="col-4 col-md-2 mb-3xl mb-md-xs">
+                                <a href="product_info.html">
+                                    <img class="mb-s mb-md-xs" src="/assets/images/product-8.png" alt="鞋子">
+                                    <p class="h6 mb-xxs">Neofoam</p>
+                                    <p>NT$4,000</p>
+                                </a>
+                            </li>
+                            <li class="col-4 col-md-2 mb-3xl mb-md-xs d-none d-md-block">
+                                <a href="product_info.html">
+                                    <img class="mb-s mb-md-xs" src="/assets/images/product-9.png" alt="鞋子">
+                                    <p class="h6 mb-xxs">Buttermood</p>
+                                    <p>NT$4,000</p>
+                                </a>
+                            </li>
+                        </ul>
+                        <!-- 產品頁碼選單 -->
+                        <ul class="pagination d-flex jcc aic mb-xl mb-md-m">
+                            <li><a class="p-xs" href="#"><i class="bi bi-chevron-left"></i></a></li>
+                            <li><a class="p-xs bg-primary300" href="#">1</a></li>
+                            <li><a class="p-xs" href="#">2</a></li>
+                            <li><a class="p-xs" href="#">3</a></li>
+                            <li><a class="p-xs" href="#">...</a></li>
+                            <li><a class="p-xs" href="#">10</a></li>
+                            <li><a class="p-xs" href="#"><i class="bi bi-chevron-right"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+
+        <%- include('./layout/callToAction'); -%>
+
+
+        <%- include('./layout/footer'); -%>
+        <script type="module" src="../main.js"></script>
+
+</body>
+
+</html>

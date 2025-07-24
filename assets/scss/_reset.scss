@@ -54,7 +54,10 @@ table {
 img{
 	vertical-align: middle;
 	max-width: 100%;
+	height: auto;
+	min-width: 0;
+	object-fit: cover;
 }
-*,*:before,*:after {
+*, *::after, *::before {
   box-sizing: border-box;
 }

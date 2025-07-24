@@ -1,0 +1,32 @@
+body {
+    font-family:"Noto Sans TC", sans-serif;
+    font-size: 16px;
+    line-height: 1.5em;
+    letter-spacing: 0.05em;
+    color: $neutral-900;
+}
+
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: $neutral-900;
+
+    &:hover {
+        color: $primary-400;
+    }
+}
+
+button {
+    cursor: pointer;
+    font: inherit;
+    padding: $spacing-s $spacing-l;
+    border-radius: 4px;
+    letter-spacing: 0.05em;
+    border: none;
+}
+@media (max-width: 576px) {
+    button {
+        padding: $spacing-xs $spacing-m;
+    }
+}
