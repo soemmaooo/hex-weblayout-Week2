@@ -1,142 +1,234 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-TW">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- CSS -->
-    <title>產品列表頁 | 六角鞋子電商</title>
-  <link rel="stylesheet" crossorigin href="/hex-weblayout-Week2/assets/all-k2Wj9IFP.css">
+    <title>首頁 | 六角鞋子電商</title>
+  <script type="module" crossorigin src="/hex-weblayout-Week2/assets/main-DgW4asOo.js"></script>
+  <link rel="stylesheet" crossorigin href="/hex-weblayout-Week2/assets/main-El0AbjRl.css">
 </head>
+
 <body>
     <header>
-        <div class="container d-flex py-m">
-            <img class="pr-2xl" src="data:image/png;base64,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" alt="Logo">
-            <nav class="mr-auto">
-                <ul class="nav d-flex">
-                    <li><a class="py-s mr-2xl" href="index.html">商品列表</a></li>
-                    <li><a class="py-s" href="#">品牌故事</a></li>
-                </ul>
-            </nav>
-            <a class="py-s" href="#"><i class="bi bi-person"></i></a>
-        </div>
-    </header>
-    <div class="container">
-        <div class="breadcrumb">
-            <p><span class="text-neutral600">首頁</span><span class="text-neutral300 px-s">/</span>所有商品</p>
-        </div>
-        <h3 class="my-xl">所有商品</h3>
-        <!-- 產品類別 -->
-        <div class="d-flex">
-            <ul class="menu mr-l">
-                <li><a class="py-s mb-m text-primary400" href="#">所有商品</a></li>
-                <li><a class="py-s mb-m" href="#">慢跑鞋</a></li>
-                <li><a class="py-s mb-m" href="#">滑板鞋</a></li>
-                <li><a class="py-s mb-m" href="#">厚底鞋</a></li>
-                <li><a class="py-s mb-m" href="#">限定/聯名企劃</a></li>
-            </ul>
-            <!-- 產品清單 -->
-            <div>
-                <ul class="productList d-flex f-wrap mb-3xl">
-                    <li class="productCard">
-                        <a href="product_info.html">
-                            <img class="mb-s" src="/hex-weblayout-Week2/assets/product-ByIiOSCa.png" alt="鞋子">
-                            <h6 class="mb-xxs">PLATFORM 404</h6>
-                            <p>NT$2,600</p>
-                        </a>
-                    </li>
-                    <li class="productCard">
-                        <a href="#">
-                            <img class="mb-s" src="/hex-weblayout-Week2/assets/product-1-BSd-Oeai.png" alt="鞋子">
-                            <h6 class="mb-xxs">PLATFORM 404</h6>
-                            <p>NT$2,600</p>
-                        </a>
-                    </li>
-                    <li class="productCard">
-                        <a href="#">
-                            <img class="mb-s" src="/hex-weblayout-Week2/assets/product-2-B3VzoAng.png" alt="鞋子">
-                            <h6 class="mb-xxs">VM001</h6>
-                            <p>NT$2,600</p>
-                        </a>
-                    </li>
-                    <li class="productCard">
-                        <a href="#">
-                            <img class="mb-s" src="/hex-weblayout-Week2/assets/product-3-AxvEbKOW.png" alt="鞋子">
-                            <h6 class="mb-xxs">Melty Kiss</h6>
-                            <p>NT$4,000</p>
-                        </a>
-                    </li>
-                    <li class="productCard">
-                        <a href="#">
-                            <img class="mb-s" src="/hex-weblayout-Week2/assets/product-4-CqyUCYzf.png" alt="鞋子">
-                            <h6 class="mb-xxs">BOOMBLOK</h6>
-                            <p>NT$3,200</p>
-                        </a>
-                    </li>
-                    <li class="productCard">
-                        <a href="#">
-                            <img class="mb-s" src="/hex-weblayout-Week2/assets/product-5-Crvwip2z.png" alt="鞋子">
-                            <h6 class="mb-xxs">BOOMBLOK</h6>
-                            <p>NT$3,200</p>
-                        </a>
-                    </li>
-                    <li class="productCard">
-                        <a href="#">
-                            <img class="mb-s" src="/hex-weblayout-Week2/assets/product-6-D5PaxBWx.png" alt="鞋子">
-                            <h6 class="mb-xxs">R:UNER</h6>
-                            <p>NT$4,000</p>
-                        </a>
-                    </li>
-                    <li class="productCard">
-                        <a href="#">
-                            <img class="mb-s" src="/hex-weblayout-Week2/assets/product-7-DJXgZGzn.png" alt="鞋子">
-                            <h6 class="mb-xxs">Sugar Snap</h6>
-                            <p>NT$4,000</p>
-                        </a>
-                    </li>
-                    <li class="productCard">
-                        <a href="#">
-                            <img class="mb-s" src="/hex-weblayout-Week2/assets/product-8-JQPwydt4.png" alt="鞋子">
-                            <h6 class="mb-xxs">Neofoam</h6>
-                            <p>NT$4,000</p>
-                        </a>
-                    </li>
-                </ul>
-                <!-- 產品頁碼選單 -->
-                <ul class="pagination d-flex jcc aic mb-xl">
-                    <li><a class="p-xs" href="#"><i class="bi bi-chevron-left"></i></a></li>
-                    <li><a class="p-xs bg-primary300" href="#">1</a></li>
-                    <li><a class="p-xs" href="#">2</a></li>
-                    <li><a class="p-xs" href="#">3</a></li>
-                    <li><a class="p-xs" href="#">...</a></li>
-                    <li><a class="p-xs" href="#">10</a></li>
-                    <li><a class="p-xs" href="#"><i class="bi bi-chevron-right"></i></a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-   
-    <section class="callToAction d-flex mt-3xl py-l jcc aic">
-        <h4 class="mr-l">加入會員取得 9 折優惠</h4>
-        <button type="button" class="btn">馬上註冊</button>
-    </section>
+    <div class="container d-flex py-m py-sm-s">
+        <a href="index.html"><img class="pr-2xl" src="/hex-weblayout-Week2/assets/logo-RhEl2I3y.svg" alt="Logo"></a>
 
+        <nav class="mr-auto">
+            <ul class="nav d-flex">
+                <li><a class="py-s mr-2xl d-md-none" href="product.html">商品列表</a></li>
+                <li><a class="py-s d-md-none" href="story.html">品牌故事</a></li>
+            </ul>
+        </nav>
+        <a class="py-s" href="login.html"><i class="bi bi-person"></i></a>
+    </div>
+</header>        <!-- 小導覽列 -->
+        <nav class="nav-small d-none d-md-block">
+            <ul class="d-flex">
+                <li class="bg-primary100"><a class="py-s px-l" href="product.html">商品列表</a></li>
+                <li class="bg-primary200 "><a class="py-s px-l" href="story.html">品牌故事</a></li>
+            </ul>
+        </nav>
+
+        <!-- banner -->
+        <section class="banner text-white">
+            <p class="text-display1 mb-m text-md-display2">URBNSTEP</p>
+            <p class="h3 mb-3xl h5-md">Your Step, Your Statement</p>
+            <button type="button" class="primary-btn">立即選購</button>
+        </section>
+        <!-- 新品上市 -->
+        <section class="container py-5xl py-md-2xl">
+            <p class="text-display2 h2-md tac mb-s mb-md-xs">New Arrival</p>
+            <p class="h2 h4-md tac mb-xl mb-md-l">新品上市</p>
+            <div class="d-flex f-wrap">
+                <ul class="row">
+                    <li class="new-item col-6 col-md-2 mb-2xl mb-md-l">
+                        <a href="#">
+                            <img src="/hex-weblayout-Week2/assets/new-1-DFuFJpu2.png" alt="新品1">
+                            <p class="h5 h6-md">Monoverse</p>
+                            <p>NT$3,600</p>
+                        </a>
+                    </li>
+                    <li class="new-item col-6 col-md-2 mb-2xl mb-md-l">
+                        <a href="#">
+                            <img src="/hex-weblayout-Week2/assets/new-2-BCvgVdcV.png" alt="新品1">
+                            <p class="h5 h6-md">PLATFORM 404</p>
+                            <p>NT$2,600</p>
+                        </a>
+                    </li>
+                    <li class="new-item col-6 col-md-2">
+                        <a href="#">
+                            <img src="/hex-weblayout-Week2/assets/new-3-DlHP5xvf.png" alt="新品1">
+                            <p class="h5 h6-md">URBN Force</p>
+                            <p>NT$3,200</p>
+                        </a>
+                    </li>
+                    <li class="new-item col-6 col-md-2">
+                        <a href="#">
+                            <img src="/hex-weblayout-Week2/assets/new-4-1hP52Cz7.png" alt="新品1">
+                            <p class="h5 h6-md">Mode90</p>
+                            <p>NT$4,000</p>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+        </section>
+        <!-- 熱銷補貨 -->
+        <section class="container py-5xl py-md-2xl">
+            <p class="h2 h4-md mb-m">熱銷補貨</p>
+            <ul class="row hotsale-md-row">
+                <li class="col-3 p-relativev sale-card">
+                    <a href="#">
+                        <img src="/hex-weblayout-Week2/assets/product-3-AxvEbKOW.png" alt="鞋子">
+                    </a>
+                    <p class="best-tag">人氣 No.1</p>
+                </li>
+                <li class="col-3 p-relativev sale-card">
+                    <a href="#">
+                        <img src="/hex-weblayout-Week2/assets/product-ByIiOSCa.png" alt="鞋子">
+                    </a>
+                    <p class="best-tag">人氣 No.1</p>
+                </li>
+                <li class="col-3 p-relativev sale-card">
+                    <a href="#">
+                        <img src="/hex-weblayout-Week2/assets/product-6-D5PaxBWx.png" alt="鞋子">
+                    </a>
+                    <p class="best-tag">人氣 No.1</p>
+                </li>
+                <li class="col-3 p-relativev sale-card">
+                    <a href="#">
+                        <img src="/hex-weblayout-Week2/assets/product-4-CqyUCYzf.png" alt="鞋子">
+                    </a>
+                    <p class="best-tag">人氣 No.1</p>
+                </li>
+            </ul>
+        </section>
+        <!-- 限量Banner -->
+        <section class="sale-banner d-flex fd-column jcc aic my-5xl my-md-2xl">
+            <div class="d-flex mb-m aic fd-md-column">
+                <p class="text-display2 h2-md text-white">URBNSTEP</p>
+                <p class="h2 h3-md text-primary300 mx-l">x</p>
+                <p class="text-display2 h2-md text-white">Kevin Chen</p>
+            </div>
+            <p class="h2 h5-md text-white tac mb-xl">跨界聯名，限量發售</p>
+            <p class="text-neutral500 text-lg tac mb-3xl d-md-flex fd-md-column">
+                <span>新銳漫畫家 Kevin Chen 親自操刀設計</span><span class="d-md-none">，</span><span>街頭能量全面引爆！</span>
+            </p>
+            <button type="button" class="primary-btn">立即搶購</button>
+            <img class="img-star" src="data:image/svg+xml,%3csvg%20width='66'%20height='66'%20viewBox='0%200%2066%2066'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20filter='url(%23filter0_f_12008_13886)'%3e%3cpath%20d='M26.7724%2013.532L25.3662%2027.4297C25.3511%2027.5787%2025.2296%2027.6983%2025.0729%2027.7183L13.7243%2029.1696C13.4035%2029.2106%2013.3186%2029.6123%2013.5981%2029.7669L23.5412%2035.2677C23.6928%2035.3515%2023.7521%2035.5308%2023.6782%2035.6815L17.6019%2048.066C17.4639%2048.3473%2017.784%2048.6324%2018.0723%2048.4855L29.7974%2042.4996C29.9665%2042.4133%2030.1776%2042.4765%2030.2635%2042.6391L35.565%2052.6727C35.7153%2052.9572%2036.1639%2052.8854%2036.2071%2052.57L37.9056%2040.1498C37.924%2040.0153%2038.0294%2039.9061%2038.1694%2039.8767L52.4479%2036.874C52.7447%2036.8116%2052.8128%2036.4403%2052.5558%2036.287L41.0465%2029.424C40.9182%2029.3475%2040.8589%2029.1999%2040.901%2029.062L44.6436%2016.8139C44.7332%2016.5208%2044.3818%2016.285%2044.119%2016.462L33.9835%2023.2923C33.8208%2023.4019%2033.5938%2023.3561%2033.4926%2023.1932L27.4047%2013.3994C27.2373%2013.1302%2026.8038%2013.2212%2026.7724%2013.532Z'%20stroke='%23D4FF00'%20stroke-width='3'/%3e%3c/g%3e%3cg%20filter='url(%23filter1_f_12008_13886)'%3e%3cpath%20d='M26.7724%2013.532L25.3662%2027.4297C25.3511%2027.5787%2025.2296%2027.6983%2025.0729%2027.7183L13.7243%2029.1696C13.4035%2029.2106%2013.3186%2029.6123%2013.5981%2029.7669L23.5412%2035.2677C23.6928%2035.3515%2023.7521%2035.5308%2023.6782%2035.6815L17.6019%2048.066C17.4639%2048.3473%2017.784%2048.6324%2018.0723%2048.4855L29.7974%2042.4996C29.9665%2042.4133%2030.1776%2042.4765%2030.2635%2042.6391L35.565%2052.6727C35.7153%2052.9572%2036.1639%2052.8854%2036.2071%2052.57L37.9056%2040.1498C37.924%2040.0153%2038.0294%2039.9061%2038.1694%2039.8767L52.4479%2036.874C52.7447%2036.8116%2052.8128%2036.4403%2052.5558%2036.287L41.0465%2029.424C40.9182%2029.3475%2040.8589%2029.1999%2040.901%2029.062L44.6436%2016.8139C44.7332%2016.5208%2044.3818%2016.285%2044.119%2016.462L33.9835%2023.2923C33.8208%2023.4019%2033.5938%2023.3561%2033.4926%2023.1932L27.4047%2013.3994C27.2373%2013.1302%2026.8038%2013.2212%2026.7724%2013.532Z'%20stroke='%23D4FF00'%20stroke-width='3'/%3e%3c/g%3e%3cpath%20d='M26.7724%2013.532L25.3662%2027.4297C25.3511%2027.5787%2025.2296%2027.6983%2025.0729%2027.7183L13.7243%2029.1696C13.4035%2029.2106%2013.3186%2029.6123%2013.5981%2029.7669L23.5412%2035.2677C23.6928%2035.3515%2023.7521%2035.5308%2023.6782%2035.6815L17.6019%2048.066C17.4639%2048.3473%2017.784%2048.6324%2018.0723%2048.4855L29.7974%2042.4996C29.9665%2042.4133%2030.1776%2042.4765%2030.2635%2042.6391L35.565%2052.6727C35.7153%2052.9572%2036.1639%2052.8854%2036.2071%2052.57L37.9056%2040.1498C37.924%2040.0153%2038.0294%2039.9061%2038.1694%2039.8767L52.4479%2036.874C52.7447%2036.8116%2052.8128%2036.4403%2052.5558%2036.287L41.0465%2029.424C40.9182%2029.3475%2040.8589%2029.1999%2040.901%2029.062L44.6436%2016.8139C44.7332%2016.5208%2044.3818%2016.285%2044.119%2016.462L33.9835%2023.2923C33.8208%2023.4019%2033.5938%2023.3561%2033.4926%2023.1932L27.4047%2013.3994C27.2373%2013.1302%2026.8038%2013.2212%2026.7724%2013.532Z'%20stroke='%23D4FF00'%20stroke-width='2'/%3e%3cdefs%3e%3cfilter%20id='filter0_f_12008_13886'%20x='0.918457'%20y='0.741211'%20width='64.3027'%20height='64.6084'%20filterUnits='userSpaceOnUse'%20color-interpolation-filters='sRGB'%3e%3cfeFlood%20flood-opacity='0'%20result='BackgroundImageFix'/%3e%3cfeBlend%20mode='normal'%20in='SourceGraphic'%20in2='BackgroundImageFix'%20result='shape'/%3e%3cfeGaussianBlur%20stdDeviation='5.5'%20result='effect1_foregroundBlur_12008_13886'/%3e%3c/filter%3e%3cfilter%20id='filter1_f_12008_13886'%20x='0.918457'%20y='0.741211'%20width='64.3027'%20height='64.6084'%20filterUnits='userSpaceOnUse'%20color-interpolation-filters='sRGB'%3e%3cfeFlood%20flood-opacity='0'%20result='BackgroundImageFix'/%3e%3cfeBlend%20mode='normal'%20in='SourceGraphic'%20in2='BackgroundImageFix'%20result='shape'/%3e%3cfeGaussianBlur%20stdDeviation='5.5'%20result='effect1_foregroundBlur_12008_13886'/%3e%3c/filter%3e%3c/defs%3e%3c/svg%3e" alt="star">
+            <img class="img-sparkle" src="data:image/svg+xml,%3csvg%20width='107'%20height='101'%20viewBox='0%200%20107%20101'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M56.5204%2021.4447C66.4308%2025.0469%2076.181%2028.9198%2085.9276%2032.9321'%20stroke='%23D2FF01'%20stroke-width='2.93433'%20stroke-miterlimit='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3cpath%20d='M41.3403%2039.2673C50.5561%2046.8512%2058.3486%2055.8527%2066.7269%2064.2858'%20stroke='%23D2FF01'%20stroke-width='2.93433'%20stroke-miterlimit='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3cpath%20d='M21.438%2050.6704C25.2109%2059.9189%2028.0815%2069.8349%2028.5455%2079.8152'%20stroke='%23D2FF01'%20stroke-width='2.93433'%20stroke-miterlimit='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3cg%20filter='url(%23filter0_f_12008_13892)'%3e%3cpath%20d='M56.5204%2021.4447C66.4308%2025.0469%2076.181%2028.9198%2085.9276%2032.9321'%20stroke='%23D2FF01'%20stroke-width='2.93433'%20stroke-miterlimit='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3cpath%20d='M41.3403%2039.2683C50.5561%2046.8522%2058.3486%2055.8537%2066.7269%2064.2868'%20stroke='%23D2FF01'%20stroke-width='2.93433'%20stroke-miterlimit='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3cpath%20d='M21.438%2050.6704C25.2109%2059.9189%2028.0815%2069.8349%2028.5455%2079.8152'%20stroke='%23D2FF01'%20stroke-width='2.93433'%20stroke-miterlimit='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/g%3e%3cdefs%3e%3cfilter%20id='filter0_f_12008_13892'%20x='0.969971'%20y='0.977539'%20width='105.426'%20height='99.3047'%20filterUnits='userSpaceOnUse'%20color-interpolation-filters='sRGB'%3e%3cfeFlood%20flood-opacity='0'%20result='BackgroundImageFix'/%3e%3cfeBlend%20mode='normal'%20in='SourceGraphic'%20in2='BackgroundImageFix'%20result='shape'/%3e%3cfeGaussianBlur%20stdDeviation='9.5'%20result='effect1_foregroundBlur_12008_13892'/%3e%3c/filter%3e%3c/defs%3e%3c/svg%3e" alt="sparkle">
+        </section>
+        <!-- 系列選購 -->
+        <section class="container py-5xl py-md-2xl">
+            <p class="h2 h4-md mb-m">依系列選購</p>
+            <ul class="row">
+                <li class="col-3 col-md-2 mb-md-s">
+                    <a href="#">
+                        <div class="p-relativev">
+                            <img src="/hex-weblayout-Week2/assets/product-6-D5PaxBWx.png" alt="系列1">
+                            <div class="category-info">
+                                <p class="h3 h6-md mb-xs category-title">URBN RUNNER</p>
+                                <p class="h4 h6-md">慢跑系列</p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="col-3 col-md-2 mb-md-s">
+                    <a href="#">
+                        <div class="p-relativev">
+                            <img src="/hex-weblayout-Week2/assets/product-11-I2v_viJI.png" alt="系列2">
+                            <div class="category-info">
+                                <p class="h3 h6-md mb-xs category-title">STREETMODE</p>
+                                <p class="h4 h6-md">滑板系列</p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="col-3 col-md-2">
+                    <a href="#">
+                        <div class="p-relativev">
+
+                            <img src="/hex-weblayout-Week2/assets/product-4-CqyUCYzf.png" alt="系列3">
+                            <div class="category-info">
+                                <p class="h3 h6-md mb-xs category-title">CHUNK DISTRICT</p>
+                                <p class="h4 h6-md">厚底系列</p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="col-3 col-md-2">
+                    <a href="#">
+                        <div class="p-relativev">
+
+                            <img src="/hex-weblayout-Week2/assets/product-1-BSd-Oeai.png" alt="系列4">
+                            <div class="category-info">
+                                <p class="h3 h6-md mb-xs category-title">COLLAB ZONE</p>
+                                <p class="h4 h6-md">聯名企劃</p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <!-- 穿搭靈感 -->
+        <section class="container py-5xl py-md-2xl">
+            <p class="h2 h4-md mb-m">穿搭靈感</p>
+            <div class="style d-flex column-gap-xs overflow-md-auto column-md-gap-16">
+                <div class="a w-66 d-flex fd-column row-gap-xs d-md-contents">
+                    <div class="c d-flex flex-grow-1 column-gap-xs d-md-contents">
+                        <img src="/hex-weblayout-Week2/assets/inspiration-1-DfKNOocz.png" alt="穿搭照">
+                        <img src="/hex-weblayout-Week2/assets/inspiration-2-BDjDmVQx.png" alt="穿搭照">
+                        <img src="/hex-weblayout-Week2/assets/inspiration-4-CXnBlVsw.png" alt="穿搭照">
+                        <img src="/hex-weblayout-Week2/assets/inspiration-5-DqqQzPWa.png" alt="穿搭照">
+                    </div>
+                    <div class="d d-flex column-gap-xs d-md-contents">
+                        <img src="/hex-weblayout-Week2/assets/inspiration-3-DIOw8vX3.png" alt="穿搭照">
+                        <div class="d-flex fd-column row-gap-xs d-md-contents">
+                            <div class="f d-flex column-gap-xs">
+                                <img src="/hex-weblayout-Week2/assets/inspiration-6-Dk9lgMEe.png" alt="穿搭照">
+                                <img src="/hex-weblayout-Week2/assets/inspiration-7-ImmAd34h.png" alt="穿搭照">
+                            </div>
+                            <div class="g d-flex column-gap-xs d-md-contents">
+                                <img src="/hex-weblayout-Week2/assets/inspiration-8-Ann8D3WO.png" alt="穿搭照">
+                                <img src="/hex-weblayout-Week2/assets/inspiration-9-PBbdk4I8.png" alt="穿搭照">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="b w-33 d-flex fd-column row-gap-xs d-md-contents">
+                    <img src="/hex-weblayout-Week2/assets/inspiration-10-BVOZ4J4I.png" alt="穿搭照">
+                    <div class="e d-flex column-gap-xs d-md-contents">
+                        <img src="/hex-weblayout-Week2/assets/inspiration-11-DfL9ObnV.png" alt="穿搭照">
+                        <img src="/hex-weblayout-Week2/assets/inspiration-12-DuuNx5Rt.png" alt="穿搭照">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="callToAction d-flex mt-3xl py-l px-md-ml jcc aic">
+    <p class="h4 h5-md mr-l">加入會員取得 9 折優惠</p>
+    <button type="button" class="btn">馬上註冊</button>
+</section>
+        <div class="bg-neutral100">
     <footer>
-        <div class="container py-5xl">
-            <div class="d-flex">
-                <img class="pr-2xl" src="data:image/png;base64,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" alt="Logo">
+        <div class="container py-5xl py-md-xl">
+            <div class="d-flex d-md-block border-b">
+                <a href="index.html"><img class="pr-2xl" src="/hex-weblayout-Week2/assets/logo-RhEl2I3y.svg" alt="Logo"></a>
                 <nav class="ml-auto">
-                    <ul class="nav d-flex">
-                        <li><a class="py-s mr-2xl" href="index.html">商品列表</a></li>
-                        <li><a class="py-s" href="#">品牌故事</a></li>
+                    <ul class="nav d-flex d-md-block">
+                        <li><a class="py-s mr-2xl pl-md-s" href="product.html">商品列表</a></li>
+                        <li><a class="py-s pl-md-s" href="story.html">品牌故事</a></li>
                     </ul>
                 </nav>
             </div>
-            <div class="tac text-sm text-neutral600 border-t pt-xl">
+            <div class="tac text-sm text-neutral600">
                 <p>Copyright ©2025 URBNSTYLE</p>
                 <p>All Rights Reserved.</p>
             </div>
         </div>
     </footer>
-
+</div>        
 </body>
+
 </html>
